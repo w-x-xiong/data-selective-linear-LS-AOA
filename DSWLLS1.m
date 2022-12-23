@@ -1,6 +1,12 @@
 function x_tilde = DSWLLS1(Anc,Theta_hat,Phi_hat,N)
 %Algorithm 1
 
+%Anc - 3*L sensor positions matrix
+%Theta_hat - L*1 azimuth angle measurements vector
+%Phi_hat - L*1 elevation angle measurements vector
+%N - Number of presumably reliable source-sensor pairs
+
+
 [~,L] = size(Anc);
 
 E = [1 0 0; 0 1 0];
